@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  dc:
+    image: ubuntu-dev:22.04
+    network_mode: host
+    container_name: ubuntu
+    tty: true
+      #restart: always
+    privileged: true
+      #environment:
+      #  - TZ=Asia/Shanghai
+      #  - KL_GCRP_EXPORTER_PATH=/var/cfg/gcrp-exporter/gcrp-exporter.conf
+      #  - DMS_RUN_MODE=container
+      #  - DMS_AGENT_ADDR=127.0.0.1:60205
+      #volumes:
+      #  - /etc/hostname:/etc/hostname:ro
+
